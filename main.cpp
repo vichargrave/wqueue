@@ -48,7 +48,7 @@ class ConsumerThread : public Thread
     ConsumerThread(wqueue<WorkItem*>& queue) : m_queue(queue) {}
  
     void* run() {
-        // Remove 1 item and process it. Blocks if no items are 
+        // Remove 1 item at a time and process it. Blocks if no items are 
         // available to process.
         for (int i = 0;; i++) {
             printf("thread %lu, loop %d - waiting for item...\n", 
