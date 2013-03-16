@@ -53,7 +53,7 @@ class ConsumerThread : public Thread
         for (int i = 0;; i++) {
             printf("thread %lu, loop %d - waiting for item...\n", 
                   (long unsigned int)self(), i);
-            WorkItem* item = (WorkItem*)m_queue.remove();
+            WorkItem* item = m_queue.remove();
             printf("thread %lu, loop %d - got one item\n", 
                   (long unsigned int)self(), i);
             printf("thread %lu, loop %d - item: message - %s, number - %d\n", 
