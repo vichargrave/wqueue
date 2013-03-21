@@ -74,7 +74,7 @@ int main(int argc, char** argv)
     }
     int iterations = atoi(argv[1]);
  
-    // Create the queue and worker threads
+    // Create the queue and consumer (worker) threads
     wqueue<WorkItem*>  queue;
     ConsumerThread* thread1 = new ConsumerThread(queue);
     ConsumerThread* thread2 = new ConsumerThread(queue);
