@@ -10,4 +10,4 @@ Build
 2. Place the threads and wqueue directories at the same directory level, 
    e.g. ${HOME}/src/threads and ${HOME}/src/wqueue.
 3. cd to ${HOME}/src/wqueue.
-4. Build the test application by running 'make'.
+4. Type 'make'.
