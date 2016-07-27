@@ -94,7 +94,7 @@ int main(int argc, char** argv)
     }
  
     // Wait for the queue to be empty
-    while (queue.size() < 0);
+    while (queue.size() > 0);
     printf("done\n");
     exit(0);
 }
