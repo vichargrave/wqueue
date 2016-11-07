@@ -1,6 +1,6 @@
 # wqueue
 
-Example source code for the article [_Multithreaded Work Queue in C++_](http://vichargrave.com/multithreaded-work-queue-in-c/).
+Example code from Multithreaded Work Queue in C++ blog.
 
 # Build
 
