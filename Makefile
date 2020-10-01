@@ -1,4 +1,4 @@
-CC			= g++
+CC		= g++
 CFLAGS		= -c -Wall
 LDFLAGS		= -lpthread
 SOURCES		= main.cpp ../threads/thread.cpp
@@ -9,7 +9,7 @@ TARGET		= wqueue
 all: $(SOURCES) $(TARGET)
 
 $(TARGET): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+	$(CC) $(OBJECTS) -o $@ $(LDFLAGS) 
 
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
